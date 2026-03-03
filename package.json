@@ -1,0 +1,40 @@
+{
+  "name": "start-template",
+  "version": "1.0.0",
+  "description": "Quick start template based on monorepo",
+  "keywords": [
+    "monorepo",
+    "template"
+  ],
+  "license": "MIT",
+  "author": "Bin",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "format": "oxfmt .",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@types/node": "^24.11.0",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
+    "simple-git-hooks": "^2.13.1",
+    "tsx": "^4.21.0",
+    "turbo": "^2.8.12",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,json}": [
+      "oxlint --fix",
+      "oxfmt"
+    ]
+  },
+  "packageManager": "pnpm@10.26.2"
+}
