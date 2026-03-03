@@ -15,15 +15,15 @@ This is a modern and lightweight monorepo starter template built with **pnpm wor
 - **TypeScript Execution**: `tsx` for running standard TypeScript scripts out of the box.
 - **Bundling (`@template/tools` example)**: Dual-format packing (ESM & CJS) using `tsdown`.
 
-## 🚀 Quick Start via `giget`
+## 🚀 Quick Start via `degit`
 
-You can quickly scaffold a new project using this template with `npx giget`.
+You can quickly scaffold a new project using this template with `npx degit`.
 
 ```bash
 
 # Create a new project named "my-project" using this template
 
-npx giget@latest https://github.com/ffgenius/template-starter.git my-project
+npx degit@latest https://github.com/ffgenius/template-starter.git my-project
 
 # Navigate to the new project
 
