@@ -1,9 +1,12 @@
-import { defineConfig } from "tsdown"
+import { defineConfig } from 'tsdown'
+import type { UserConfig } from 'tsdown'
 
-export default defineConfig({
-  entry: "./src/index.ts",
+const config: UserConfig = defineConfig({
+  entry: './src/index.ts',
   clean: true,
   dts: true,
-  platform: "neutral",
-  format: "esm",
+  platform: 'neutral',
+  format: 'esm',
 })
+
+export default config

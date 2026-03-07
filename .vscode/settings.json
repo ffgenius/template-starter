@@ -4,10 +4,10 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode",
-    "editor.formatOnSave": true,
-  },
+    "editor.formatOnSave": true
+  }
 }
