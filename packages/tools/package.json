@@ -6,14 +6,12 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
@@ -21,7 +19,7 @@
     "build": "tsdown"
   },
   "devDependencies": {
-    "tsdown": "^0.20.1"
+    "tsdown": "^0.21.0"
   },
   "packageManager": "pnpm@10.26.1"
 }
