@@ -8,6 +8,7 @@
   ],
   "license": "MIT",
   "author": "Bin",
+  "type": "module",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
