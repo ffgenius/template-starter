@@ -1,12 +1,14 @@
-import { defineConfig } from 'tsdown'
-import type { UserConfig } from 'tsdown'
+import { defineConfig } from 'vite-plus/pack'
 
-const config: UserConfig = defineConfig({
+const config = defineConfig({
   entry: './src/index.ts',
   clean: true,
   dts: true,
   platform: 'neutral',
   format: 'esm',
+  exports: {
+    inlinedDependencies: true,
+  },
 })
 
 export default config

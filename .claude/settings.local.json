@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vp install:*)",
+      "WebSearch",
+      "Bash(vp run build:*)",
+      "Bash(vp run test:*)"
+    ]
+  }
+}

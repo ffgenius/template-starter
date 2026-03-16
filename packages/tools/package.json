@@ -6,20 +6,17 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "dev": "tsdown -w",
-    "build": "tsdown"
+    "dev": "vp pack -w",
+    "build": "vp pack"
   },
   "devDependencies": {
-    "tsdown": "^0.21.0"
+    "vite-plus": "catalog:"
   },
   "packageManager": "pnpm@10.26.1"
 }
