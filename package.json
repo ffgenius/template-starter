@@ -10,13 +10,13 @@
   "author": "Bin",
   "type": "module",
   "scripts": {
-    "dev": "turbo run dev",
     "build": "turbo run build",
-    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "format": "oxfmt .",
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
-    "format": "oxfmt .",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "@types/node": "^24.11.0",

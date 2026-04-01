@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+
 import { sum } from '../index'
 
 describe('sum', () => {

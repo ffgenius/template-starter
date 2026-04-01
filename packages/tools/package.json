@@ -15,8 +15,8 @@
     }
   },
   "scripts": {
-    "dev": "tsdown -w",
-    "build": "tsdown"
+    "build": "tsdown",
+    "dev": "tsdown -w"
   },
   "devDependencies": {
     "tsdown": "^0.21.0"
