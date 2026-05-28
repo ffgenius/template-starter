@@ -1,6 +1,6 @@
-import type { UserConfig } from 'tsdown'
+import type { UserConfig } from 'vite-plus/pack'
 
-import { defineConfig } from 'tsdown'
+import { defineConfig } from 'vite-plus/pack'
 
 const config: UserConfig = defineConfig({
   entry: './src/index.ts',

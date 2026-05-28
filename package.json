@@ -12,21 +12,20 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "format": "oxfmt .",
-    "lint": "oxlint .",
-    "lint:fix": "oxlint . --fix",
+    "format": "vp fmt .",
+    "lint": "vp lint .",
+    "lint:fix": "vp lint . --fix",
     "prepare": "simple-git-hooks",
     "test": "turbo run test"
   },
   "devDependencies": {
-    "@types/node": "^24.11.0",
-    "oxfmt": "^0.36.0",
-    "oxlint": "^1.51.0",
-    "simple-git-hooks": "^2.13.1",
-    "tsx": "^4.21.0",
-    "turbo": "^2.8.12",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "@types/node": "catalog:types",
+    "simple-git-hooks": "catalog:tooling",
+    "tsx": "catalog:tooling",
+    "turbo": "catalog:tooling",
+    "typescript": "catalog:tooling",
+    "vite-plus": "catalog:tooling",
+    "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -37,5 +36,5 @@
       "oxfmt"
     ]
   },
-  "packageManager": "pnpm@10.26.2"
+  "packageManager": "pnpm@10.34.1"
 }

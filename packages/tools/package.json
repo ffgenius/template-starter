@@ -15,11 +15,11 @@
     }
   },
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown -w"
+    "build": "vp pack",
+    "dev": "vp pack -w"
   },
   "devDependencies": {
-    "tsdown": "^0.21.0"
+    "vite-plus": "catalog:tooling"
   },
   "packageManager": "pnpm@10.26.1"
 }

@@ -1,3 +1,7 @@
 {
-  "recommendations": ["Vue.volar", "oxc.oxc-vscode"]
+  "recommendations": [
+    "Vue.volar",
+    "oxc.oxc-vscode",
+    "VoidZero.vite-plus-extension-pack"
+  ]
 }
