@@ -34,8 +34,8 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx,vue,json}": [
-      "oxlint --fix",
-      "oxfmt"
+      "vp lint --fix",
+      "vp fmt"
     ]
   },
   "packageManager": "pnpm@10.34.1"
