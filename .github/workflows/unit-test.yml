@@ -2,9 +2,9 @@ name: Unit Test
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
-    branches: [main]
+    branches: [master, main]
 
 jobs:
   lint:
@@ -25,8 +25,8 @@ jobs:
       - name: Install
         run: pnpm install
 
-      - name: Lint
-        run: pnpm run lint
+      - name: Check
+        run: pnpm run check
 
       - name: Typecheck
         run: pnpm run typecheck
