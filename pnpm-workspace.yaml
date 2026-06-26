@@ -6,25 +6,25 @@ catalogs:
     simple-git-hooks: ^2.13.1
     tsx: ^4.22.3
     turbo: ^2.9.15
-    typescript: ^5.9.3
+    typescript: 7.0.1-rc
     vite: npm:@voidzero-dev/vite-plus-core@latest
     vite-plus: latest
   testing:
     vitest: npm:@voidzero-dev/vite-plus-test@latest
   vue:
     vue: ^3.5.35
-    '@vitejs/plugin-vue': ^6.0.7
-    '@vue/tsconfig': ^0.8.1
+    "@vitejs/plugin-vue": ^6.0.7
+    "@vue/tsconfig": ^0.9.1
     vue-tsc: ^3.3.2
   types:
-    '@types/node': ^24.12.4
+    "@types/node": ^26.0.1
 overrides:
-  vite: 'catalog:tooling'
-  vitest: 'catalog:testing'
+  vite: "catalog:tooling"
+  vitest: "catalog:testing"
 peerDependencyRules:
   allowAny:
     - vite
     - vitest
   allowedVersions:
-    vite: '*'
-    vitest: '*'
+    vite: "*"
+    vitest: "*"
