@@ -69,11 +69,7 @@ importers:
         specifier: npm:@voidzero-dev/vite-plus-test@latest
         version: '@voidzero-dev/vite-plus-test@0.1.22(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)(vite@8.0.0-beta.16(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3))'
 
-  packages/tools:
-    devDependencies:
-      vite-plus:
-        specifier: catalog:tooling
-        version: 0.1.22(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)(vite@8.0.0-beta.16(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3))
+  packages/tools: {}
 
   playground:
     dependencies:
@@ -90,9 +86,6 @@ importers:
       vite:
         specifier: npm:@voidzero-dev/vite-plus-core@latest
         version: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)'
-      vite-plus:
-        specifier: catalog:tooling
-        version: 0.1.22(@types/node@26.0.1)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34))(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)
       vue-tsc:
         specifier: catalog:vue
         version: 3.3.2(typescript@6.0.3)
@@ -2082,46 +2075,6 @@ snapshots:
   '@voidzero-dev/vite-plus-linux-x64-musl@0.1.22':
     optional: true
 
-  '@voidzero-dev/vite-plus-test@0.1.22(@types/node@26.0.1)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34))(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)':
-    dependencies:
-      '@standard-schema/spec': 1.1.0
-      '@types/chai': 5.2.3
-      '@voidzero-dev/vite-plus-core': 0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)
-      es-module-lexer: 1.7.0
-      obug: 2.1.1
-      pixelmatch: 7.2.0
-      pngjs: 7.0.0
-      sirv: 3.0.2
-      std-env: 4.1.0
-      tinybench: 2.9.0
-      tinyexec: 1.0.4
-      tinyglobby: 0.2.15
-      vite: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)'
-      ws: 8.21.0
-    optionalDependencies:
-      '@types/node': 26.0.1
-    transitivePeerDependencies:
-      - '@arethetypeswrong/core'
-      - '@tsdown/css'
-      - '@tsdown/exe'
-      - '@vitejs/devtools'
-      - bufferutil
-      - esbuild
-      - jiti
-      - less
-      - publint
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
-      - tsx
-      - typescript
-      - unplugin-unused
-      - unrun
-      - utf-8-validate
-      - yaml
-
   '@voidzero-dev/vite-plus-test@0.1.22(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)(vite@8.0.0-beta.16(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3))':
     dependencies:
       '@standard-schema/spec': 1.1.0
@@ -2579,55 +2532,6 @@ snapshots:
     dependencies:
       rolldown: 1.0.0-rc.12
     optional: true
-
-  vite-plus@0.1.22(@types/node@26.0.1)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34))(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34):
-    dependencies:
-      '@oxc-project/types': 0.129.0
-      '@oxlint/plugins': 1.61.0
-      '@voidzero-dev/vite-plus-core': 0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)
-      '@voidzero-dev/vite-plus-test': 0.1.22(@types/node@26.0.1)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@26.0.1)(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34))(esbuild@0.28.0)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)
-      oxfmt: 0.48.0
-      oxlint: 1.63.0(oxlint-tsgolint@0.22.1)
-      oxlint-tsgolint: 0.22.1
-    optionalDependencies:
-      '@voidzero-dev/vite-plus-darwin-arm64': 0.1.22
-      '@voidzero-dev/vite-plus-darwin-x64': 0.1.22
-      '@voidzero-dev/vite-plus-linux-arm64-gnu': 0.1.22
-      '@voidzero-dev/vite-plus-linux-arm64-musl': 0.1.22
-      '@voidzero-dev/vite-plus-linux-x64-gnu': 0.1.22
-      '@voidzero-dev/vite-plus-linux-x64-musl': 0.1.22
-      '@voidzero-dev/vite-plus-win32-arm64-msvc': 0.1.22
-      '@voidzero-dev/vite-plus-win32-x64-msvc': 0.1.22
-    transitivePeerDependencies:
-      - '@arethetypeswrong/core'
-      - '@edge-runtime/vm'
-      - '@opentelemetry/api'
-      - '@tsdown/css'
-      - '@tsdown/exe'
-      - '@types/node'
-      - '@vitejs/devtools'
-      - '@vitest/coverage-istanbul'
-      - '@vitest/coverage-v8'
-      - '@vitest/ui'
-      - bufferutil
-      - esbuild
-      - happy-dom
-      - jiti
-      - jsdom
-      - less
-      - publint
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
-      - tsx
-      - typescript
-      - unplugin-unused
-      - unrun
-      - utf-8-validate
-      - vite
-      - yaml
 
   vite-plus@0.1.22(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.2.34)(vite@8.0.0-beta.16(@types/node@26.0.1)(esbuild@0.27.3)(tsx@4.22.3)):
     dependencies:

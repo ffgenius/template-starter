@@ -15,7 +15,6 @@
     "@vitejs/plugin-vue": "catalog:vue",
     "@vue/tsconfig": "catalog:vue",
     "vite": "catalog:tooling",
-    "vite-plus": "catalog:tooling",
     "vue-tsc": "catalog:vue"
   }
 }
