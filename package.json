@@ -33,8 +33,11 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,vue,json}": [
+    "*.{js,ts,tsx,vue}": [
       "vp lint --fix",
+      "vp fmt"
+    ],
+    "*.json": [
       "vp fmt"
     ]
   },
