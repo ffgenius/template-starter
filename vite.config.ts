@@ -1,4 +1,4 @@
-import { defineConfig } from "vite-plus";
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   run: {
@@ -7,7 +7,7 @@ export default defineConfig({
     },
   },
   fmt: {
-    trailingComma: "es5",
+    trailingComma: 'es5',
     printWidth: 80,
     semi: false,
     tabWidth: 2,
@@ -15,18 +15,18 @@ export default defineConfig({
     singleQuote: true,
     sortImports: {
       groups: [
-        "type-import",
-        ["value-builtin", "value-external"],
-        "type-internal",
-        "value-internal",
-        ["type-parent", "type-sibling", "type-index"],
-        ["value-parent", "value-sibling", "value-index"],
-        "unknown",
+        'type-import',
+        ['value-builtin', 'value-external'],
+        'type-internal',
+        'value-internal',
+        ['type-parent', 'type-sibling', 'type-index'],
+        ['value-parent', 'value-sibling', 'value-index'],
+        'unknown',
       ],
     },
 
     sortTailwindcss: {
-      functions: ["clsx", "cn"],
+      functions: ['clsx', 'cn'],
       preserveWhitespace: true,
     },
 
@@ -35,19 +35,19 @@ export default defineConfig({
     },
   },
   lint: {
-    plugins: ["import", "vue", "vitest"],
+    plugins: ['import', 'vue', 'vitest'],
     options: {
       typeAware: true,
       typeCheck: true,
     },
     jsPlugins: [
       {
-        name: "vite-plus",
-        specifier: "vite-plus/oxlint-plugin",
+        name: 'vite-plus',
+        specifier: 'vite-plus/oxlint-plugin',
       },
     ],
     rules: {
-      "vite-plus/prefer-vite-plus-imports": "error",
+      'vite-plus/prefer-vite-plus-imports': 'error',
     },
   },
-});
+})
