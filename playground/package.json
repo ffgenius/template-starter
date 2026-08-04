@@ -9,6 +9,7 @@
     "preview": "vp preview"
   },
   "dependencies": {
+    "@template/tools": "workspace:*",
     "vue": "catalog:vue"
   },
   "devDependencies": {

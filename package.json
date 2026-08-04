@@ -10,21 +10,20 @@
   "author": "Bin",
   "type": "module",
   "scripts": {
-    "build": "turbo run build",
+    "build": "vp run -r build",
     "check": "vp check",
-    "dev": "turbo run dev",
+    "dev": "vp run -r --parallel dev",
     "format": "vp fmt .",
     "lint": "vp lint .",
     "lint:fix": "vp lint . --fix",
     "prepare": "simple-git-hooks",
-    "test": "turbo run test",
+    "test": "vp run -r build && vp test",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "catalog:types",
     "simple-git-hooks": "catalog:tooling",
     "tsx": "catalog:tooling",
-    "turbo": "catalog:tooling",
     "typescript": "catalog:tooling",
     "vite-plus": "catalog:tooling",
     "vitest": "catalog:testing"
