@@ -16,30 +16,25 @@
     "format": "vp fmt .",
     "lint": "vp lint .",
     "lint:fix": "vp lint . --fix",
-    "prepare": "simple-git-hooks",
+    "prepare": "vp config",
     "test": "turbo run test",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "catalog:types",
-    "simple-git-hooks": "catalog:tooling",
     "tsx": "catalog:tooling",
     "turbo": "catalog:tooling",
     "typescript": "catalog:tooling",
     "vite-plus": "catalog:tooling",
     "vitest": "catalog:testing"
   },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
   "lint-staged": {
-    "*.{js,ts,tsx,vue}": [
-      "vp lint --fix",
-      "vp fmt"
-    ],
-    "*.json": [
-      "vp fmt"
+    "*": [
+      "vp check --fix"
     ]
+  },
+  "engines": {
+    "node": ">=24.0.0"
   },
   "packageManager": "pnpm@10.34.1"
 }
